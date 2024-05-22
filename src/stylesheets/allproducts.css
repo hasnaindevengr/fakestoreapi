@@ -1,0 +1,41 @@
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body {
+  flex: 1; /* This ensures the card body takes up all available space */
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body .card-text {
+  flex: 2; /* This makes the description take up all remaining space */
+}
+
+
+
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+/* customm CSS for App */
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+main {
+  padding: 20px;
+}
