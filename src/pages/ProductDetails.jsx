@@ -19,11 +19,21 @@ const ProductDetails = () => {
 
   return (
     product && (
-      <div>
-        <h1>Title:{product.title}</h1>
-        <img src={product.image} alt={product.title} />
-        <h2>Description:{product.description}</h2>
-        <p>Price: {product.price}</p>
+      <div className="card" style={{ width: "18rem" }}>
+        <img
+          src={product.image}
+          className="card-img-top"
+          alt={product.title}
+          style={{ width: "100%", height: "300px", objectFit: "cover" }}
+        />
+        <div className="card-body">
+          <h5 className="card-title">{product.title}e</h5>
+          <p className="card-text">{product.description}.</p>
+          <a href="#" class="btn btn-primary">
+            Go somewhere
+          </a>
+          Price - Rs . {product.prrice}
+        </div>
       </div>
     )
   );
