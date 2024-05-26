@@ -62,9 +62,9 @@ const AllProducts = () => {
       <button
         type="button"
         className="btn btn-primary mx-2"
-        onClick={() => getCatProducts("All")}
+        onClick={() => getCatProducts("men's clothing")}
       >
-        All Products
+        Men's Clothing
       </button>
 
       {/* Header Section is here */}
