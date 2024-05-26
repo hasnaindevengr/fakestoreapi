@@ -24,19 +24,49 @@ const AllProducts = () => {
   }, []);
 
   const getCatProducts = async (name) => {
-    let response = await fetch(`https://fakestoreapi.com/products/category/${name}`);
+    let response = await fetch(
+      `https://fakestoreapi.com/products/category/${name}`
+    );
     let data = await response.json();
     setProducts(data);
-
+  };
 
   // UI dispaly / design
   return (
     <div className="container my-3 pt-5 pb-5">
-      {/* 3 x buttons to diplay products category wise */}
-      <button onClick={()=>getCatProducts('jewelery')}>Jewellary</button>
-      <button onClick={()=>getCatProducts('electronics')}>Electronics</button>
-      {/* <button onClick={()=>getCatProducts('women\'s clothing')}>Women Clothing</button> */}
-      
+      {/* 4 x buttons to diplay products category wise  UI*/}
+      <button
+        type="button"
+        className="btn btn-primary mx-2"
+        onClick={() => getCatProducts("jewelery")}
+      >
+        Jewellary
+      </button>
+
+      <button
+        type="button"
+        className="btn btn-primary mx-2"
+        onClick={() => getCatProducts("electronics")}
+      >
+        Electronics
+      </button>
+
+      <button
+        type="button"
+        className="btn btn-primary mx-2"
+        onClick={() => getCatProducts("women's clothing")}
+      >
+        Women Clothing
+      </button>
+
+      <button
+        type="button"
+        className="btn btn-primary mx-2"
+        onClick={() => getCatProducts("All")}
+      >
+        All Products
+      </button>
+
       {/* Header Section is here */}
       <h1>Products</h1>
       <div className="row g-4">
