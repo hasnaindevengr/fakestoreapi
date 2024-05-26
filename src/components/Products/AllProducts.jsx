@@ -29,21 +29,14 @@ const AllProducts = () => {
     setProducts(data);
 
 
-
-
-
-
-
-
   // UI dispaly / design
   return (
     <div className="container my-3 pt-5 pb-5">
       {/* 3 x buttons to diplay products category wise */}
       <button onClick={()=>getCatProducts('jewelery')}>Jewellary</button>
       <button onClick={()=>getCatProducts('electronics')}>Electronics</button>
-      <button onClick={()=>getCatProducts('women\s clothing')}>Women's Clothing</button>
+      {/* <button onClick={()=>getCatProducts('women\'s clothing')}>Women Clothing</button> */}
       
-
       {/* Header Section is here */}
       <h1>Products</h1>
       <div className="row g-4">
